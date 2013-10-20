@@ -13,15 +13,15 @@ catkin_package(
     DEPENDS ach QtCore QtGui )
 
 qt4_wrap_cpp(MOC_FILES
-  include/hubo_init.h
+  include/hubo_planning.h
   include/FlowLayout.h
 )
 
 set(SOURCE_FILES
-  src/hubo_init.cpp
-  src/hubo_init_slots.cpp
+  src/hubo_planning.cpp
+  src/hubo_planning_slots.cpp
   src/FlowLayout.cpp
-  include/hubo_init.h
+  include/hubo_planning.h
   include/FlowLayout.h
   ${MOC_FILES}
 )
